@@ -62,7 +62,7 @@ public class Step2BusInfoAdapter extends RecyclerView.Adapter<Step2BusInfoAdapte
         //Log.d(TAG, "getOldPosition: "+holder.getOldPosition());
         if(position == mSelectedPos){   //getAdapterPosition
             Log.d(TAG, "position == mSelectedPos ");
-            holder.itemView.setBackgroundColor(Color.parseColor("#dcd6f7"));    //색깔을 이렇게 셋팅해주는거였음!!
+            holder.itemView.setBackgroundColor(Color.parseColor("#d1d5ed"));    //색깔을 이렇게 셋팅해주는거였음!!
             //holder.layoutBusstop.setBackgroundColor(R.color.colorThema1);
 
         }
