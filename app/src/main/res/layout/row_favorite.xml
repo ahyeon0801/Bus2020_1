@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="2sp"
+    android:paddingBottom="2sp"
+    >
+
+  <!--  <CheckBox
+        android:id="@+id/cbFavorite_row"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:background="@drawable/icon_star_selected"
+        />-->
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="55sp"
+      android:background="@drawable/box_line">
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_star_selected"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_width="25sp"
+        android:layout_height="25sp"/>
+    <TextView
+        android:id="@+id/tvFavStop_row"
+        android:layout_toRightOf="@+id/imgStar"
+        android:layout_toLeftOf="@+id/imgDel"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정류소이름"
+        android:fontFamily="@font/nanumbarungothic"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imgDel"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10sp"
+        android:src="@drawable/icon64_delete"
+        android:layout_width="30sp"
+        android:layout_height="30sp"/>
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/layoutBusstop"
+    >
+
+    <ImageView
+        android:src="@drawable/icon64_down_arrow"
+        android:id="@+id/imgBusLine"
+        android:layout_width="38sp"
+        android:layout_height="38sp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tvBusStopName"
+        android:layout_toRightOf="@+id/imgBusLine"
+        android:layout_toLeftOf="@+id/tvArsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="정류소 이름 "
+        android:fontFamily="@font/nanumbarungothic"
+        android:textColor="@color/colorBlack"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tvArsId"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="정류소ID"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"/>
+
+</RelativeLayout>

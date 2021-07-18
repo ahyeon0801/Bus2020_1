@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".FavoriteActivity">
+
+    <TextView
+        android:id="@+id/tvFavBus"
+        android:text="즐겨찾기 정류소"
+        android:paddingTop="15sp"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarungothic"
+        />
+    <TextView
+        android:id="@+id/tvFavMsg"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_width="260sp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavStop"
+        android:layout_below="@+id/tvFavBus"
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

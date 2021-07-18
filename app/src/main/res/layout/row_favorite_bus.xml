@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="2sp"
+    android:paddingBottom="2sp"
+    >
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="58sp"
+      android:background="@drawable/box_line">
+    <ImageView
+        android:id="@+id/imgBus"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_bus_front"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_width="25sp"
+        android:layout_height="25sp"/>
+    <TextView
+        android:id="@+id/tvFavBusname_row"
+        android:layout_toRightOf="@+id/imgBus"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버스이름"
+        android:fontFamily="@font/nanumbarungothic"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/imgDel"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10sp"
+        android:src="@drawable/icon64_delete"
+        android:layout_width="30sp"
+        android:layout_height="30sp"/>
+  </RelativeLayout>
+</LinearLayout>

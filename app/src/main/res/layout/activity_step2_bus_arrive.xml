@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".BusArriveActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutBusStopBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/box_busstop">
+
+        <TextView
+            android:id="@+id/tvBusStopName22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUSSTOP NAME"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:paddingTop="30sp"
+            android:fontFamily="@font/nanumbarungothic"
+            />
+        <TextView
+            android:id="@+id/tvBusStopArsId"
+            android:text="ID"
+            android:textSize="18sp"
+            android:paddingTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarungothic"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5sp">
+            <TextView
+                android:id="@+id/tvFavText"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="즐겨찾기 "
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/nanumbarungothic"/>
+            <CheckBox
+                android:id="@+id/cbFavorite"
+                android:layout_toRightOf="@+id/tvFavText"
+                android:layout_centerVertical="true"
+                android:layout_width="33sp"
+                android:layout_height="33sp"
+                android:button="@null"
+                android:background="@drawable/btn_star"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvArriveMsg"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_below="@+id/layoutBusStopBox"
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBusArrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
